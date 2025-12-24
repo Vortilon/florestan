@@ -1,0 +1,84 @@
+/* Minimalistic styles - Apple/Tesla inspired */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth transitions */
+button, input, select, textarea {
+  transition: all 0.15s ease;
+}
+
+/* Touch-friendly minimum sizes */
+button, a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@media (max-width: 768px) {
+  button, a {
+    min-height: 48px;
+  }
+}
+
+/* Focus states */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Auto-save feedback animation */
+.field-saved {
+  animation: saveFlash 1.5s ease-out;
+}
+
+@keyframes saveFlash {
+  0% {
+    background-color: #10b981;
+    border-color: #10b981;
+  }
+  50% {
+    background-color: #d1fae5;
+    border-color: #10b981;
+  }
+  100% {
+    background-color: transparent;
+    border-color: #e2e8f0;
+  }
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print styles */
+@media print {
+  header, footer, button, .no-print {
+    display: none !important;
+  }
+}
+

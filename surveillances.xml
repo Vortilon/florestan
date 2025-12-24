@@ -1,0 +1,2951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<surveillances year="2026">
+  <contractors>
+    <contractor id="albert_lim">Albert Lim</contractor>
+    <contractor id="claus_schmetkamp">Claus Schmetkamp</contractor>
+    <contractor id="conor_daly">Conor Daly</contractor>
+    <contractor id="david_leggett">David Leggett</contractor>
+    <contractor id="giancarlo_malesani">Giancarlo Malesani</contractor>
+    <contractor id="ian_hegarty">Ian Hegarty</contractor>
+    <contractor id="jq_chan">JQ Chan</contractor>
+    <contractor id="lauren_whitty">Lauren Whitty</contractor>
+    <contractor id="omar_bin_ghannam">Omar Bin Ghannam</contractor>
+    <contractor id="qurat_ul_ain_aslam">Qurat ul ain Aslam</contractor>
+    <contractor id="thomas_cividino">Thomas Cividino</contractor>
+    <contractor id="vinny_conway">Vinny Conway</contractor>
+    <contractor id="yen_yang_lim">Yen Yang Lim</contractor>
+    <contractor id="katalin_dailey">Katalin Dailey</contractor>
+    <contractor id="walter_valarezo">Walter Valarezo</contractor>
+    <contractor id="daria_novak">Daria Novak</contractor>
+  </contractors>
+  <projects>
+    <project id="P251">
+      <operator>Air Transat</operator>
+      <msn>251</msn>
+      <model>A330</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Air Transat</country>
+      <region>North America</region>
+      <status>APPROVED</status>
+      <progress>100</progress>
+      <assignedTo>Albert Lim</assignedTo>
+    </project>
+    <project id="P728">
+      <operator>Air Transat</operator>
+      <msn>728</msn>
+      <model>A330</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Air Transat</country>
+      <region>North America</region>
+      <status>REJECTED</status>
+      <progress>100</progress>
+      <assignedTo>Albert Lim</assignedTo>
+    </project>
+    <project id="P1440">
+      <operator>AirSwift</operator>
+      <msn>1440</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>AirSwift</country>
+      <region>Asia</region>
+      <status>APPROVED</status>
+      <progress>100</progress>
+      <assignedTo>Lauren Whitty</assignedTo>
+    </project>
+    <project id="P1492">
+      <operator>AirSwift</operator>
+      <msn>1492</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>AirSwift</country>
+      <region>Asia</region>
+      <status>ASSIGNED</status>
+      <progress>20</progress>
+      <assignedTo>Lauren Whitty</assignedTo>
+    </project>
+    <project id="P1675">
+      <operator>AirSwift</operator>
+      <msn>1675</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>AirSwift</country>
+      <region>Asia</region>
+      <status>SCHEDULED</status>
+      <progress>10</progress>
+      <assignedTo>Lauren Whitty</assignedTo>
+    </project>
+    <project id="P1246">
+      <operator>Alliance Air</operator>
+      <msn>1246</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>IN PROGRESS</status>
+      <progress>60</progress>
+      <assignedTo>David Leggett</assignedTo>
+    </project>
+    <project id="P1252">
+      <operator>Alliance Air</operator>
+      <msn>1252</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>IN PROGRESS</status>
+      <progress>60</progress>
+      <assignedTo>David Leggett</assignedTo>
+    </project>
+    <project id="P1272">
+      <operator>Alliance Air</operator>
+      <msn>1272</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>IN PROGRESS</status>
+      <progress>60</progress>
+      <assignedTo>David Leggett</assignedTo>
+    </project>
+    <project id="P1381">
+      <operator>Alliance Air</operator>
+      <msn>1381</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>REVIEW PENDING</status>
+      <progress>85</progress>
+      <assignedTo>David Leggett</assignedTo>
+    </project>
+    <project id="P1383">
+      <operator>Alliance Air</operator>
+      <msn>1383</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>REVIEW PENDING</status>
+      <progress>85</progress>
+      <assignedTo>David Leggett</assignedTo>
+    </project>
+    <project id="P1421">
+      <operator>Alliance Air</operator>
+      <msn>1421</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1423">
+      <operator>Alliance Air</operator>
+      <msn>1423</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1427">
+      <operator>Alliance Air</operator>
+      <msn>1427</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1434">
+      <operator>Alliance Air</operator>
+      <msn>1434</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1439">
+      <operator>Alliance Air</operator>
+      <msn>1439</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1445">
+      <operator>Alliance Air</operator>
+      <msn>1445</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1456">
+      <operator>Alliance Air</operator>
+      <msn>1456</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1463">
+      <operator>Alliance Air</operator>
+      <msn>1463</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>David Leggett</fm>
+      <country>Alliance Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1133">
+      <operator>Caribbean Airlines</operator>
+      <msn>1133</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Caribbean Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1318">
+      <operator>Caribbean Airlines</operator>
+      <msn>1318</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Caribbean Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1531">
+      <operator>Caribbean Airlines</operator>
+      <msn>1531</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Caribbean Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1534">
+      <operator>Caribbean Airlines</operator>
+      <msn>1534</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Caribbean Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1540">
+      <operator>Caribbean Airlines</operator>
+      <msn>1540</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Caribbean Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P785">
+      <operator>Canary Fly S.L.</operator>
+      <msn>785</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Canary Fly S.L.</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P911">
+      <operator>Canary Fly S.L.</operator>
+      <msn>911</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Canary Fly S.L.</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1695">
+      <operator>Cebgo Inc</operator>
+      <msn>1695</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Cebgo Inc</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1949">
+      <operator>Delta Airlines</operator>
+      <msn>1949</msn>
+      <model>A330</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P7943">
+      <operator>Delta Airlines</operator>
+      <msn>7943</msn>
+      <model>A320</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P7973">
+      <operator>Delta Airlines</operator>
+      <msn>7973</msn>
+      <model>A320</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8191">
+      <operator>Delta Airlines</operator>
+      <msn>8191</msn>
+      <model>A320</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8251">
+      <operator>Delta Airlines</operator>
+      <msn>8251</msn>
+      <model>A320</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8283">
+      <operator>Delta Airlines</operator>
+      <msn>8283</msn>
+      <model>A320</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P31970">
+      <operator>Delta Airlines</operator>
+      <msn>31970</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P63534">
+      <operator>Delta Airlines</operator>
+      <msn>63534</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Delta Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P34498">
+      <operator>Ethiopian Airlines</operator>
+      <msn>34498</msn>
+      <model>787</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Ethiopian Airlines</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P40968">
+      <operator>Ethiopian Airlines</operator>
+      <msn>40968</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Ethiopian Airlines</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P40969">
+      <operator>Ethiopian Airlines</operator>
+      <msn>40969</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Ethiopian Airlines</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P40970">
+      <operator>Ethiopian Airlines</operator>
+      <msn>40970</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Ethiopian Airlines</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P4572">
+      <operator>Jambojet Limited</operator>
+      <msn>4572</msn>
+      <model>Q400</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Thomas Cividino</fm>
+      <country>Jambojet Limited</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P4573">
+      <operator>Jambojet Limited</operator>
+      <msn>4573</msn>
+      <model>Q400</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Thomas Cividino</fm>
+      <country>Jambojet Limited</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P35607">
+      <operator>Kalitta Air</operator>
+      <msn>35607</msn>
+      <model>777</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Kalitta Air</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P35608">
+      <operator>Kalitta Air</operator>
+      <msn>35608</msn>
+      <model>777</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Kalitta Air</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P35609">
+      <operator>Kalitta Air</operator>
+      <msn>35609</msn>
+      <model>777</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Kalitta Air</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P35610">
+      <operator>Kalitta Air</operator>
+      <msn>35610</msn>
+      <model>777</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Kalitta Air</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30355">
+      <operator>KLM</operator>
+      <msn>30355</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>KLM</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30356">
+      <operator>KLM</operator>
+      <msn>30356</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>KLM</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1506">
+      <operator>Manta Air</operator>
+      <msn>1506</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Thomas Cividino</fm>
+      <country>Manta Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1508">
+      <operator>Manta Air</operator>
+      <msn>1508</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Thomas Cividino</fm>
+      <country>Manta Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1515">
+      <operator>Manta Air</operator>
+      <msn>1515</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Thomas Cividino</fm>
+      <country>Manta Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1267">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1267</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1309">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1309</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1338">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1338</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1368">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1368</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1378">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1378</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1393">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1393</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1521">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1521</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1543">
+      <operator>Myanmar National Airlines</operator>
+      <msn>1543</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30157">
+      <operator>Myanmar National Airlines</operator>
+      <msn>30157</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar National Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P541">
+      <operator>Nyx OU</operator>
+      <msn>541</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Nyx OU</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1287">
+      <operator>PNG Air</operator>
+      <msn>1287</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>PNG Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1317">
+      <operator>PNG Air</operator>
+      <msn>1317</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>PNG Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1373">
+      <operator>PNG Air</operator>
+      <msn>1373</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>PNG Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1430">
+      <operator>PNG Air</operator>
+      <msn>1430</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>PNG Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1461">
+      <operator>PNG Air</operator>
+      <msn>1461</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>PNG Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42828">
+      <operator>Royal Air Maroc</operator>
+      <msn>42828</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Royal Air Maroc</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42830">
+      <operator>Royal Air Maroc</operator>
+      <msn>42830</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Royal Air Maroc</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P969">
+      <operator>Satena</operator>
+      <msn>969</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P991">
+      <operator>Satena</operator>
+      <msn>991</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1011">
+      <operator>Satena</operator>
+      <msn>1011</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1019">
+      <operator>Satena</operator>
+      <msn>1019</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1120">
+      <operator>Satena</operator>
+      <msn>1120</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1121">
+      <operator>Satena</operator>
+      <msn>1121</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1165">
+      <operator>Satena</operator>
+      <msn>1165</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1201">
+      <operator>Satena</operator>
+      <msn>1201</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1203">
+      <operator>Satena</operator>
+      <msn>1203</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Satena</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P34023">
+      <operator>Southwest Airlines</operator>
+      <msn>34023</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Albert Lim</fm>
+      <country>Southwest Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P35354">
+      <operator>Tarco Aviation</operator>
+      <msn>35354</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Tarco Aviation</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P37754">
+      <operator>Tarco Aviation</operator>
+      <msn>37754</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Tarco Aviation</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1683">
+      <operator>Uzbekistan Helicopters LLC</operator>
+      <msn>1683</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Uzbekistan Helicopters LLC</country>
+      <region>Middle East</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1687">
+      <operator>Uzbekistan Helicopters LLC</operator>
+      <msn>1687</msn>
+      <model>ATR</model>
+      <deadline>2026-06-30</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Uzbekistan Helicopters LLC</country>
+      <region>Middle East</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P36608">
+      <operator>Virgin Australia</operator>
+      <msn>36608</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39413">
+      <operator>Virgin Australia</operator>
+      <msn>39413</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P66635">
+      <operator>Virgin Australia</operator>
+      <msn>66635</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P66638">
+      <operator>Virgin Australia</operator>
+      <msn>66638</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P66644">
+      <operator>Virgin Australia</operator>
+      <msn>66644</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P66647">
+      <operator>Virgin Australia</operator>
+      <msn>66647</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P66648">
+      <operator>Virgin Australia</operator>
+      <msn>66648</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P66650">
+      <operator>Virgin Australia</operator>
+      <msn>66650</msn>
+      <model>737</model>
+      <deadline>2026-06-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Virgin Australia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1162">
+      <operator>Air KBZ</operator>
+      <msn>1162</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Air KBZ</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1224">
+      <operator>Air KBZ</operator>
+      <msn>1224</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Air KBZ</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1333">
+      <operator>Air KBZ</operator>
+      <msn>1333</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Air KBZ</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1301">
+      <operator>Air Moana</operator>
+      <msn>1301</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Air Moana</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1347">
+      <operator>Air Moana</operator>
+      <msn>1347</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Air Moana</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P995">
+      <operator>Air Nostrum</operator>
+      <msn>995</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P999">
+      <operator>Air Nostrum</operator>
+      <msn>999</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1022">
+      <operator>Air Nostrum</operator>
+      <msn>1022</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1023">
+      <operator>Air Nostrum</operator>
+      <msn>1023</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1032">
+      <operator>Air Nostrum</operator>
+      <msn>1032</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1040">
+      <operator>Air Nostrum</operator>
+      <msn>1040</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1041">
+      <operator>Air Nostrum</operator>
+      <msn>1041</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1145">
+      <operator>Air Nostrum</operator>
+      <msn>1145</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1198">
+      <operator>Air Nostrum</operator>
+      <msn>1198</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1261">
+      <operator>Air Nostrum</operator>
+      <msn>1261</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Conor Daly</fm>
+      <country>Air Nostrum</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1311">
+      <operator>Astra Airways Limited</operator>
+      <msn>1311</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Astra Airways Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1352">
+      <operator>Astra Airways Limited</operator>
+      <msn>1352</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Astra Airways Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1371">
+      <operator>Astra Airways Limited</operator>
+      <msn>1371</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Astra Airways Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1043">
+      <operator>Azul</operator>
+      <msn>1043</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1052">
+      <operator>Azul</operator>
+      <msn>1052</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1066">
+      <operator>Azul</operator>
+      <msn>1066</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1082">
+      <operator>Azul</operator>
+      <msn>1082</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1088">
+      <operator>Azul</operator>
+      <msn>1088</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1094">
+      <operator>Azul</operator>
+      <msn>1094</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1100">
+      <operator>Azul</operator>
+      <msn>1100</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1102">
+      <operator>Azul</operator>
+      <msn>1102</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1113">
+      <operator>Azul</operator>
+      <msn>1113</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1115">
+      <operator>Azul</operator>
+      <msn>1115</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1138">
+      <operator>Azul</operator>
+      <msn>1138</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P10070">
+      <operator>Azul</operator>
+      <msn>10070</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P10173">
+      <operator>Azul</operator>
+      <msn>10173</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>Azul</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11752">
+      <operator>China Airlines</operator>
+      <msn>11752</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>China Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11917">
+      <operator>China Airlines</operator>
+      <msn>11917</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>China Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P62727">
+      <operator>Hainan Airlines</operator>
+      <msn>62727</msn>
+      <model>787</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Hainan Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P62728">
+      <operator>Hainan Airlines</operator>
+      <msn>62728</msn>
+      <model>787</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Hainan Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5234">
+      <operator>LAN Airlines</operator>
+      <msn>5234</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LAN Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5707">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>5707</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5845">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>5845</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5883">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>5883</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8485">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>8485</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8657">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>8657</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P10949">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>10949</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11139">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>11139</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11228">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>11228</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11293">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>11293</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11522">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>11522</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11629">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>11629</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P11725">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>11725</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P12205">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>12205</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P12538">
+      <operator>LATAM Airlines Group S.A.</operator>
+      <msn>12538</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>LATAM Airlines Group S.A.</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1004">
+      <operator>Loganair</operator>
+      <msn>1004</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Loganair</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1213">
+      <operator>Loganair</operator>
+      <msn>1213</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Loganair</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1237">
+      <operator>Loganair</operator>
+      <msn>1237</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Loganair</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1257">
+      <operator>Loganair</operator>
+      <msn>1257</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Loganair</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1265">
+      <operator>Loganair</operator>
+      <msn>1265</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Loganair</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1283">
+      <operator>Loganair</operator>
+      <msn>1283</msn>
+      <model>ATR</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Loganair</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P40966">
+      <operator>Loftleidir Icelandic EHF</operator>
+      <msn>40966</msn>
+      <model>737</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Vinny Conway</fm>
+      <country>Loftleidir Icelandic EHF</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P3487">
+      <operator>Nouvelair Tunisie</operator>
+      <msn>3487</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Omar Bin Ghannam</fm>
+      <country>Nouvelair Tunisie</country>
+      <region>Africa</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P7170">
+      <operator>Vietjet</operator>
+      <msn>7170</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Vietjet</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P6705">
+      <operator>volaris</operator>
+      <msn>6705</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>volaris</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P6906">
+      <operator>volaris</operator>
+      <msn>6906</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>volaris</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P6969">
+      <operator>volaris</operator>
+      <msn>6969</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>volaris</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P7457">
+      <operator>volaris</operator>
+      <msn>7457</msn>
+      <model>A320</model>
+      <deadline>2026-09-30</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>volaris</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39930">
+      <operator>Xiamen Airlines</operator>
+      <msn>39930</msn>
+      <model>737</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Xiamen Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39931">
+      <operator>Xiamen Airlines</operator>
+      <msn>39931</msn>
+      <model>737</model>
+      <deadline>2026-09-30</deadline>
+      <fm>JQ Chan</fm>
+      <country>Xiamen Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8116">
+      <operator>Air Guilin</operator>
+      <msn>8116</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>JQ Chan</fm>
+      <country>Air Guilin</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8132">
+      <operator>Air Guilin</operator>
+      <msn>8132</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>JQ Chan</fm>
+      <country>Air Guilin</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P36695">
+      <operator>Bolivian Aviation (BOA)</operator>
+      <msn>36695</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>Bolivian Aviation (BOA)</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1085">
+      <operator>Brussels Airlines SA</operator>
+      <msn>1085</msn>
+      <model>A330</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Brussels Airlines SA</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P38106">
+      <operator>China United Airlines</operator>
+      <msn>38106</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>JQ Chan</fm>
+      <country>China United Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P37958">
+      <operator>COPA Airlines</operator>
+      <msn>37958</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>COPA Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P37959">
+      <operator>COPA Airlines</operator>
+      <msn>37959</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Giancarlo Malesani</fm>
+      <country>COPA Airlines</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P7693">
+      <operator>easyJet Europe</operator>
+      <msn>7693</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>easyJet Europe</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42231">
+      <operator>Emirates</operator>
+      <msn>42231</msn>
+      <model>777</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Emirates</country>
+      <region>Middle East</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42232">
+      <operator>Emirates</operator>
+      <msn>42232</msn>
+      <model>777</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Emirates</country>
+      <region>Middle East</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42233">
+      <operator>Emirates</operator>
+      <msn>42233</msn>
+      <model>777</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Emirates</country>
+      <region>Middle East</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42234">
+      <operator>Emirates</operator>
+      <msn>42234</msn>
+      <model>777</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>Emirates</country>
+      <region>Middle East</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39613">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>39613</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39615">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>39615</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39622">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>39622</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P40235">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>40235</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P43986">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>43986</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P43987">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>43987</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P43989">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>43989</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P43990">
+      <operator>GOL Linhas Aereas</operator>
+      <msn>43990</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Claus Schmetkamp</fm>
+      <country>GOL Linhas Aereas</country>
+      <region>Latin America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P7512">
+      <operator>Hong Kong Express Airways Limited</operator>
+      <msn>7512</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Hong Kong Express Airways Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5161">
+      <operator>Jetstar Japan</operator>
+      <msn>5161</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Jetstar Japan</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5274">
+      <operator>Jetstar Japan</operator>
+      <msn>5274</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Jetstar Japan</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8842">
+      <operator>Jetstar Japan</operator>
+      <msn>8842</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Jetstar Japan</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P33562">
+      <operator>SunExpress Airlines</operator>
+      <msn>33562</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>SunExpress Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P35842">
+      <operator>SunExpress Airlines</operator>
+      <msn>35842</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>SunExpress Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39434">
+      <operator>SunExpress Airlines</operator>
+      <msn>39434</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>SunExpress Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42826">
+      <operator>SunExpress Airlines</operator>
+      <msn>42826</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>SunExpress Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P42827">
+      <operator>SunExpress Airlines</operator>
+      <msn>42827</msn>
+      <model>737</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Qurat ul ain Aslam</fm>
+      <country>SunExpress Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P8964">
+      <operator>Starflyer Inc.</operator>
+      <msn>8964</msn>
+      <model>A320</model>
+      <deadline>2026-12-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Starflyer Inc.</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P10711">
+      <operator>American Airlines</operator>
+      <msn>10711</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P33203">
+      <operator>American Airlines</operator>
+      <msn>33203</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P33518">
+      <operator>American Airlines</operator>
+      <msn>33518</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44472">
+      <operator>American Airlines</operator>
+      <msn>44472</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44473">
+      <operator>American Airlines</operator>
+      <msn>44473</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44475">
+      <operator>American Airlines</operator>
+      <msn>44475</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44477">
+      <operator>American Airlines</operator>
+      <msn>44477</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44478">
+      <operator>American Airlines</operator>
+      <msn>44478</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44481">
+      <operator>American Airlines</operator>
+      <msn>44481</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44482">
+      <operator>American Airlines</operator>
+      <msn>44482</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P44484">
+      <operator>American Airlines</operator>
+      <msn>44484</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>American Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P4474">
+      <operator>American Airlines</operator>
+      <msn>4474</msn>
+      <model></model>
+      <deadline>2026-03-31</deadline>
+      <fm></fm>
+      <country></country>
+      <region></region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P772">
+      <operator>Asiana Airlines</operator>
+      <msn>772</msn>
+      <model>A330</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Asiana Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P803">
+      <operator>Asiana Airlines</operator>
+      <msn>803</msn>
+      <model>A330</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Asiana Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P966">
+      <operator>Citilink Indonesia</operator>
+      <msn>966</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Citilink Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P972">
+      <operator>Citilink Indonesia</operator>
+      <msn>972</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Citilink Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P988">
+      <operator>Citilink Indonesia</operator>
+      <msn>988</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Citilink Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1422">
+      <operator>Citilink Indonesia</operator>
+      <msn>1422</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Citilink Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1438">
+      <operator>Citilink Indonesia</operator>
+      <msn>1438</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Citilink Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5399">
+      <operator>Citilink Indonesia</operator>
+      <msn>5399</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Citilink Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P4166">
+      <operator>EasyJet Switzerland</operator>
+      <msn>4166</msn>
+      <model></model>
+      <deadline>2026-03-31</deadline>
+      <fm></fm>
+      <country></country>
+      <region></region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1324">
+      <operator>Emerald Airlines</operator>
+      <msn>1324</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Emerald Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1326">
+      <operator>Emerald Airlines</operator>
+      <msn>1326</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Emerald Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1334">
+      <operator>Emerald Airlines</operator>
+      <msn>1334</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Emerald Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1339">
+      <operator>Emerald Airlines</operator>
+      <msn>1339</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Emerald Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1464">
+      <operator>Emerald Airlines</operator>
+      <msn>1464</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Emerald Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1471">
+      <operator>Emerald Airlines</operator>
+      <msn>1471</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Conor Daly</fm>
+      <country>Emerald Airlines</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1364">
+      <operator>Fly91</operator>
+      <msn>1364</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>David Leggett</fm>
+      <country>Fly91</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1385">
+      <operator>Fly91</operator>
+      <msn>1385</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>David Leggett</fm>
+      <country>Fly91</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1214">
+      <operator>Garuda Indonesia</operator>
+      <msn>1214</msn>
+      <model>A330</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30140">
+      <operator>Garuda Indonesia</operator>
+      <msn>30140</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30141">
+      <operator>Garuda Indonesia</operator>
+      <msn>30141</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30142">
+      <operator>Garuda Indonesia</operator>
+      <msn>30142</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30143">
+      <operator>Garuda Indonesia</operator>
+      <msn>30143</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30151">
+      <operator>Garuda Indonesia</operator>
+      <msn>30151</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30155">
+      <operator>Garuda Indonesia</operator>
+      <msn>30155</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P30156">
+      <operator>Garuda Indonesia</operator>
+      <msn>30156</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Garuda Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P2695">
+      <operator>Global Crossing Airlines</operator>
+      <msn>2695</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Albert Lim</fm>
+      <country>Global Crossing Airlines</country>
+      <region>North America</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P874">
+      <operator>Hi Fly</operator>
+      <msn>874</msn>
+      <model>A330</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Hi Fly</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5512">
+      <operator>Hong Kong Airlines</operator>
+      <msn>5512</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Hong Kong Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P3242">
+      <operator>Myanmar Airways International Company Limited</operator>
+      <msn>3242</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>JQ Chan</fm>
+      <country>Myanmar Airways International Company Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39821">
+      <operator>PT Batik Air Indonesia</operator>
+      <msn>39821</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>PT Batik Air Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39831">
+      <operator>PT Batik Air Indonesia</operator>
+      <msn>39831</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>PT Batik Air Indonesia</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39816">
+      <operator>PT Lion Mentari Air</operator>
+      <msn>39816</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>PT Lion Mentari Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P43296">
+      <operator>Smartwings a.s</operator>
+      <msn>43296</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Smartwings a.s</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P64937">
+      <operator>Smartwings a.s</operator>
+      <msn>64937</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Smartwings a.s</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P3457">
+      <operator>Super Air Jet</operator>
+      <msn>3457</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Super Air Jet</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P5158">
+      <operator>Super Air Jet</operator>
+      <msn>5158</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Super Air Jet</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1583">
+      <operator>TAROM</operator>
+      <msn>1583</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>TAROM</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1621">
+      <operator>TAROM</operator>
+      <msn>1621</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>TAROM</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1622">
+      <operator>TAROM</operator>
+      <msn>1622</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>TAROM</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1624">
+      <operator>TAROM</operator>
+      <msn>1624</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>TAROM</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1620">
+      <operator>Toki Air</operator>
+      <msn>1620</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>Toki Air</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P41266">
+      <operator>Transavia France</operator>
+      <msn>41266</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Ian Hegarty</fm>
+      <country>Transavia France</country>
+      <region>Europe</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P538">
+      <operator>Trigana Air Service</operator>
+      <msn>538</msn>
+      <model>ATR</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Lauren Whitty</fm>
+      <country>Trigana Air Service</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P6023">
+      <operator>West Air Company Limited</operator>
+      <msn>6023</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>West Air Company Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P6237">
+      <operator>West Air Company Limited</operator>
+      <msn>6237</msn>
+      <model>A320</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>West Air Company Limited</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1533">
+      <operator>t'Way Airlines</operator>
+      <msn>1533</msn>
+      <model>A330</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>t'Way Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P1549">
+      <operator>t'Way Airlines</operator>
+      <msn>1549</msn>
+      <model>A330</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>t'Way Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P34249">
+      <operator>t'Way Airlines</operator>
+      <msn>34249</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>t'Way Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+    <project id="P39448">
+      <operator>t'Way Airlines</operator>
+      <msn>39448</msn>
+      <model>737</model>
+      <deadline>2026-03-31</deadline>
+      <fm>Yen Yang Lim</fm>
+      <country>t'Way Airlines</country>
+      <region>Asia</region>
+      <status>NOT ASSIGNED</status>
+      <progress>0</progress>
+      <assignedTo></assignedTo>
+    </project>
+  </projects>
+</surveillances>

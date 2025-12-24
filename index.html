@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAE Surveillance Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white shadow-sm">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 md:px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/DAE_Logo.jpg" alt="DAE Logo" class="h-7 w-auto max-w-[100px] rounded-sm object-contain" />
+        <div>
+          <h1 class="text-base md:text-lg font-semibold text-slate-900">Surveillance Dashboard</h1>
+          <p class="text-[10px] md:text-xs text-slate-500">Aircraft inspection tracking</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 md:gap-3">
+        <select id="roleSelector" class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">
+          <option value="admin">Admin</option>
+          <option value="fm">Fleet Manager</option>
+          <option value="contractor">Contractor</option>
+        </select>
+        <span id="buildTag" class="hidden md:inline rounded-full border border-slate-200 bg-slate-50 px-2 md:px-3 py-1 text-[10px] md:text-xs font-semibold text-slate-600">MVP</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 md:px-6 pb-20 md:pb-24 pt-6 md:pt-8">
+    <!-- Admin View: Create New Project -->
+    <div id="adminView" class="hidden">
+      <section class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <h2 class="text-lg md:text-xl font-semibold text-slate-900">Create New Surveillance</h2>
+          <button id="createProjectBtn" class="flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-xs md:text-sm font-semibold text-white hover:bg-slate-800">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+            New Project
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Main Dashboard Section -->
+    <section class="rounded-lg bg-white p-4 md:p-6 shadow-sm">
+      <div class="flex flex-wrap items-start justify-between gap-4 mb-4 md:mb-5">
+        <div>
+          <h2 class="text-lg md:text-xl font-semibold text-slate-900" id="sectionTitle">Projects</h2>
+          <p class="mt-1 text-xs md:text-sm text-slate-600" id="sectionSubtitle">
+            Filter and manage surveillance projects
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span id="countPill" class="rounded-full border border-slate-200 bg-slate-50 px-2 md:px-3 py-1 text-[10px] md:text-xs font-semibold text-slate-600">—</span>
+          <span id="dataPill" class="rounded-full border border-slate-200 bg-slate-50 px-2 md:px-3 py-1 text-[10px] md:text-xs font-semibold text-slate-600">Loading...</span>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="grid gap-3 md:grid-cols-6 mb-4 md:mb-5">
+        <div class="md:col-span-2">
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Search</label>
+          <input id="q" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm" placeholder="Operator, MSN, Model..." />
+        </div>
+
+        <div>
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Operator</label>
+          <select id="fOperator" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm"></select>
+        </div>
+
+        <div>
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Model</label>
+          <select id="fModel" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm"></select>
+        </div>
+
+        <div>
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Region</label>
+          <select id="fRegion" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm"></select>
+        </div>
+
+        <div>
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Status</label>
+          <select id="fStatus" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm"></select>
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">FM</label>
+          <select id="fFM" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm"></select>
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Deadline (from)</label>
+          <input id="dFrom" type="date" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm" />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400">Deadline (to)</label>
+          <input id="dTo" type="date" class="mt-1 w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm" />
+        </div>
+
+        <div class="md:col-span-6 flex flex-wrap items-center justify-between gap-2 md:gap-3 rounded-lg border border-slate-200 bg-slate-50 px-2 md:px-3 py-2">
+          <div class="text-[10px] md:text-xs text-slate-600">
+            <span class="font-semibold text-slate-700">Workflow:</span>
+            <span class="hidden md:inline"> NOT ASSIGNED → assign · REVIEW PENDING → approve/reject · APPROVED → exports</span>
+            <span class="md:hidden"> Tap row for actions</span>
+          </div>
+          <button id="clearFiltersBtn" class="rounded-lg border border-slate-200 bg-white px-2 md:px-3 py-1 md:py-1.5 text-[10px] md:text-xs font-semibold text-slate-700 hover:bg-slate-50" type="button">
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop Table / Mobile Cards -->
+      <div class="hidden md:block mt-5 overflow-x-auto rounded-lg border border-slate-200 bg-white">
+        <table class="min-w-full text-left text-xs text-slate-700">
+          <thead class="border-b border-slate-200 bg-slate-50 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+            <tr>
+              <th class="px-3 py-3">Operator</th>
+              <th class="px-3 py-3">MSN</th>
+              <th class="px-3 py-3">Model</th>
+              <th class="px-3 py-3">Deadline</th>
+              <th class="px-3 py-3">FM</th>
+              <th class="px-3 py-3">Status</th>
+              <th class="px-3 py-3">Progress</th>
+              <th class="px-3 py-3 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tbody" class="divide-y divide-slate-100"></tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Card View -->
+      <div id="mobileCards" class="md:hidden space-y-3 mt-4"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="fixed inset-0 z-50 hidden bg-black/30 p-4">
+    <div class="mx-auto mt-10 max-w-2xl w-full rounded-xl bg-white shadow-lg max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between gap-4 border-b border-slate-200 px-4 md:px-5 py-4 sticky top-0 bg-white">
+        <div>
+          <h3 id="modalTitle" class="text-sm md:text-base font-semibold text-slate-900">—</h3>
+          <p id="modalSub" class="mt-1 text-[10px] md:text-xs text-slate-500">—</p>
+        </div>
+        <button id="modalClose" class="rounded-lg border border-slate-200 bg-white px-2 md:px-3 py-1 md:py-1.5 text-[10px] md:text-xs font-semibold text-slate-700 hover:bg-slate-50" type="button">✕</button>
+      </div>
+      <div id="modalBody" class="px-4 md:px-5 py-4 text-xs md:text-sm text-slate-700"></div>
+      <div id="modalFooter" class="flex flex-wrap items-center justify-end gap-2 border-t border-slate-200 px-4 md:px-5 py-4 sticky bottom-0 bg-white"></div>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+

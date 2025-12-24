@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAE Aircraft Inspection Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-slate-100 text-slate-900 font-sans">
+  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
+      <div class="flex items-center gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/DAE_Logo.jpg" alt="DAE Logo" class="h-8 w-auto max-w-[120px] rounded-sm object-contain" />
+        <span class="h-3 w-3 rounded-full bg-red-700"></span>
+        <div>
+          <h1 class="text-lg font-semibold text-slate-900">DAE Aircraft Inspection Report</h1>
+          <p class="text-xs text-slate-500">ATR inspection workflow — source-of-truth layout</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">V2002</span>
+        <button class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-600" type="button">Inspector mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-6 pb-24 pt-8">
+    <section class="rounded-lg bg-white p-6 shadow-sm">
+      <h2 class="text-2xl font-semibold text-slate-900">AIRCRAFT INSPECTION REPORT</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Mission Type</label>
+          <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+            <label class="flex items-center gap-2"><input type="radio" name="mission_type" class="h-4 w-4" /> Audit</label>
+            <label class="flex items-center gap-2"><input type="radio" name="mission_type" class="h-4 w-4" /> Return</label>
+            <label class="flex items-center gap-2"><input type="radio" name="mission_type" class="h-4 w-4" /> Delivery</label>
+          </div>
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Aircraft Type</label>
+          <input class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="ATR-72-600" />
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">MSN</label>
+          <input class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="xxxxx" />
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Current Registration</label>
+          <input class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="xxxxx" />
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Current Operator</label>
+          <input class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="xxxxxxxxxxx" />
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Report Prepared by</label>
+          <input class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Inspector Name" />
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Inspection Report Date</label>
+          <input type="date" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" />
+        </div>
+        <div class="field flex flex-col gap-2">
+          <label class="text-xs font-semibold uppercase tracking-wide text-slate-400">Physical Inspection Date</label>
+          <input type="date" class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" />
+        </div>
+      </div>
+      <div class="mt-6 rounded-lg border border-dashed border-slate-200 bg-slate-50 p-6 text-sm text-slate-500">
+        (Please replace image with Image of Inspected aircraft)
+      </div>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Contents</h3>
+      <div class="mt-4 grid gap-3 text-sm text-slate-600 md:grid-cols-2">
+        <div>
+          <p>AIRCRAFT INSPECTION REPORT</p>
+          <p>Contents</p>
+          <p>Introduction</p>
+          <p>Section 1 – Executive Summary</p>
+          <p>1. General - Summary of Visit</p>
+          <p>2. Operator Key Contact Personal</p>
+          <p>3. Inspection Findings</p>
+          <p>g) Incorporated Mods &amp; STCs at Current Operator</p>
+        </div>
+        <div>
+          <p>Section 2 - Technical Specification</p>
+          <p>Section 3 – Supporting Documentation</p>
+          <p>Section 4 – Physical Inspection Checklist</p>
+          <p>Section 5 – Inspection Photos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Introduction</h3>
+      <p class="mt-3 text-sm text-slate-600">
+        The following report has been prepared at the request of Dubai Aerospace Enterprise (DAE) Ltd (“DAE”). This report is without prejudice and is submitted in confidence to Dubai Aerospace Enterprise (DAE) Ltd.
+      </p>
+      <p class="mt-3 text-sm text-slate-600">
+        If any of the below sections were inaccessible, or were not inspected please mark as N/A. Where multiple aircraft are inspected at the same location, please feel free to copy your findings, where appropriate (i.e. Operator Key Contacts), across all the Inspection Reports.
+      </p>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Section 1 – Executive Summary</h3>
+      <div class="mt-5 space-y-6">
+        <div>
+          <h4 class="text-base font-semibold text-slate-900">1. General - Summary of Visit</h4>
+          <div class="mt-3 grid gap-4 md:grid-cols-2">
+            <textarea class="min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="a) Brief purpose of the visit, location(s) and date(s) of the visit"></textarea>
+            <textarea class="min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="b) Operator cooperation and general responsiveness"></textarea>
+            <textarea class="min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="c) Description of Operator’s maintenance facilities at inspection locations (satisfactory/unsatisfactory)"></textarea>
+            <textarea class="min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="d) Issues/Concerns/Recommendations/Feedback on the Inspection"></textarea>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-base font-semibold text-slate-900">2. Operator Key Contact Personal</h4>
+          <div class="mt-3 overflow-x-auto">
+            <table class="min-w-full text-left text-xs text-slate-600">
+              <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+                <tr>
+                  <th class="px-2 py-2">Contact</th>
+                  <th class="px-2 py-2">Title</th>
+                  <th class="px-2 py-2">Phone Number</th>
+                  <th class="px-2 py-2">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100">
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-base font-semibold text-slate-900">3. Inspection Findings</h4>
+          <div class="mt-4 space-y-4">
+            <div>
+              <p class="text-sm font-semibold text-slate-700">a) RECORDS</p>
+              <textarea class="mt-2 min-h-[160px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="1-5. Records keeping, digitization process, record scanning, tracking ADs/SBs, modifications, damages, SV records, release tags, preservation records, issues/concerns/recommendations"></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">b) AIRFRAME</p>
+              <textarea class="mt-2 min-h-[160px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Summary of physical inspection, avionics modifications, findings, storage conditions, serious damage/photos, issues/concerns/recommendations"></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">c) ENGINES</p>
+              <textarea class="mt-2 min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Assigned Engine Serial Number – xxxxx (Issues/Concerns/Recommendations)"></textarea>
+              <textarea class="mt-3 min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Assigned Engine Serial Number – xxxxx (Issues/Concerns/Recommendations)"></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">d) PROPELLERS</p>
+              <textarea class="mt-2 min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Assigned Propeller Serial Number – xxxxx (Issues/Concerns/Recommendations)"></textarea>
+              <textarea class="mt-3 min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Assigned Propeller Serial Number – xxxxx (Issues/Concerns/Recommendations)"></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">e) LANDING GEARS AND WHEEL WELLS</p>
+              <textarea class="mt-2 min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Issues/Concerns/Recommendations"></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">f) INCIDENTS/ACCIDENTS</p>
+              <textarea class="mt-2 min-h-[120px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Provide comment on incidents/accidents and NIS statements"></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">g) Incorporated Mods &amp; STCs at Current Operator</p>
+              <div class="mt-2 overflow-x-auto">
+                <table class="min-w-full text-left text-xs text-slate-600">
+                  <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+                    <tr>
+                      <th class="px-2 py-2">ATA</th>
+                      <th class="px-2 py-2">Title</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-slate-100">
+                      <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                      <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                    </tr>
+                    <tr class="border-b border-slate-100">
+                      <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                      <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="mt-2 text-xs text-slate-500">NOTE: Include STC, SB, Form 337 or Regulatory Authority Equivalent, EO Package at installation, and local approvals.</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">h) DIFFERENCES</p>
+              <textarea class="mt-2 min-h-[100px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="Identify any difference between the aircraft and provided Specification Summary."></textarea>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-slate-700">i) FOLLOW UP ITEMS</p>
+              <textarea class="mt-2 min-h-[100px] w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" placeholder="List any items that remain open post completion of the visit/inspection report."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Section 2 - Technical Specification</h3>
+      <div class="mt-5 space-y-8">
+        <div>
+          <h4 class="text-base font-semibold text-slate-900">1. General</h4>
+          <div class="mt-3 grid gap-3 md:grid-cols-2">
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="MSN Aircraft Model" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Date of Manufacture (DD MMM YY)" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Operator" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Total Airframe Hrs/Cycs Since New" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="As of Date (DD MMM YY)" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="C of R / Expiry date (DD MMM YY)" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="C of A / ARC Expiry Date (DD MMM YY)" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Noise Rating" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="ETOPS Capable" />
+          </div>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-slate-900">2. Current Maintenance Program &amp; Maintenance Status</h4>
+          <div class="mt-3 grid gap-3 md:grid-cols-2">
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Airworthiness Authority Approval" />
+            <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Current AMP-Rev & Date" />
+          </div>
+          <div class="mt-4 overflow-x-auto">
+            <table class="min-w-full text-left text-xs text-slate-600">
+              <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+                <tr>
+                  <th class="px-2 py-2">Check Type (C & greater)</th>
+                  <th class="px-2 py-2">Interval</th>
+                  <th class="px-2 py-2">Date of last Check</th>
+                  <th class="px-2 py-2">TSN at Last Check</th>
+                  <th class="px-2 py-2">CSN at Last Check</th>
+                  <th class="px-2 py-2">Next Due FH/FC/Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100">
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                  <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-base font-semibold text-slate-900">3. Operating Weights</h4>
+          <div class="mt-3 overflow-x-auto">
+            <table class="min-w-full text-left text-xs text-slate-600">
+              <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+                <tr>
+                  <th class="px-2 py-2">Type</th>
+                  <th class="px-2 py-2">Metric</th>
+                  <th class="px-2 py-2">Imperial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-slate-100"><td class="px-2 py-2">Maximum Taxi Weight (MTW)</td><td class="px-2 py-2">79,607 KGS</td><td class="px-2 py-2">175,500 LBS</td></tr>
+                <tr class="border-b border-slate-100"><td class="px-2 py-2">Maximum Take Off Weight (MTOW)</td><td class="px-2 py-2">79,380 KGS</td><td class="px-2 py-2">175,000 LBS</td></tr>
+                <tr class="border-b border-slate-100"><td class="px-2 py-2">Maximum Landing Weight (MLW)</td><td class="px-2 py-2">68,176 KGS</td><td class="px-2 py-2">150,300 LBS</td></tr>
+                <tr class="border-b border-slate-100"><td class="px-2 py-2">Maximum Zero Fuel Weight (MZFW)</td><td class="px-2 py-2">64,819 KGS</td><td class="px-2 py-2">142,900 LBS</td></tr>
+                <tr class="border-b border-slate-100"><td class="px-2 py-2">Empty Weight (EW)</td><td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td><td class="px-2 py-2"></td></tr>
+                <tr><td class="px-2 py-2">Last Weighed Date</td><td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td><td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Section 3 – Supporting Documentation</h3>
+      <p class="mt-3 text-sm text-slate-600">THIS SECTION IS APPLICABLE ONLY FOR SURVEILLANCES. To be collected and loaded to ATS. *Only load those documents not currently available on ATS.</p>
+      <div class="mt-4 overflow-x-auto">
+        <table class="min-w-full text-left text-xs text-slate-600">
+          <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+            <tr>
+              <th class="px-2 py-2">ATS</th>
+              <th class="px-2 py-2">Supporting Documentation</th>
+              <th class="px-2 py-2">✓ Yes</th>
+              <th class="px-2 py-2">✕ No</th>
+              <th class="px-2 py-2">NA</th>
+              <th class="px-2 py-2">Already on ATS / Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-slate-100">
+              <td class="px-2 py-2">A001</td>
+              <td class="px-2 py-2">Airworthiness Review Certificate</td>
+              <td class="px-2 py-2"><input type="checkbox" /></td>
+              <td class="px-2 py-2"><input type="checkbox" /></td>
+              <td class="px-2 py-2"><input type="checkbox" /></td>
+              <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+            </tr>
+            <tr class="border-b border-slate-100">
+              <td class="px-2 py-2">A002</td>
+              <td class="px-2 py-2">Current Certificate of Airworthiness</td>
+              <td class="px-2 py-2"><input type="checkbox" /></td>
+              <td class="px-2 py-2"><input type="checkbox" /></td>
+              <td class="px-2 py-2"><input type="checkbox" /></td>
+              <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Section 4 – Physical Inspection Checklist</h3>
+      <div class="mt-4 grid gap-4 md:grid-cols-2">
+        <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Airport" />
+        <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Date of Inspection" />
+        <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Facilities" />
+        <input class="rounded border border-slate-200 px-3 py-2 text-sm" placeholder="Conditions" />
+      </div>
+      <div class="mt-6">
+        <h4 class="text-base font-semibold text-slate-900">1. Aircraft Exterior</h4>
+        <p class="mt-2 text-xs text-slate-500">Circles the a/c counterclockwise</p>
+        <div class="mt-3 overflow-x-auto">
+          <table class="min-w-full text-left text-xs text-slate-600">
+            <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+              <tr>
+                <th class="px-2 py-2">Area</th>
+                <th class="px-2 py-2">Good</th>
+                <th class="px-2 py-2">Average</th>
+                <th class="px-2 py-2">Poor</th>
+                <th class="px-2 py-2">Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100">
+                <td class="px-2 py-2">Left Forward Fuselage — Fuselage Skin</td>
+                <td class="px-2 py-2"><input type="radio" name="left_fwd_skin" /></td>
+                <td class="px-2 py-2"><input type="radio" name="left_fwd_skin" /></td>
+                <td class="px-2 py-2"><input type="radio" name="left_fwd_skin" /></td>
+                <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-2 py-2">Nose Gear &amp; Wheel Well — Evidence of Leaks</td>
+                <td class="px-2 py-2"><input type="radio" name="nose_leaks" /></td>
+                <td class="px-2 py-2"><input type="radio" name="nose_leaks" /></td>
+                <td class="px-2 py-2"><input type="radio" name="nose_leaks" /></td>
+                <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mt-6">
+        <h4 class="text-base font-semibold text-slate-900">2. Aircraft Interior</h4>
+        <div class="mt-3 overflow-x-auto">
+          <table class="min-w-full text-left text-xs text-slate-600">
+            <thead class="border-b border-slate-200 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
+              <tr>
+                <th class="px-2 py-2">Area</th>
+                <th class="px-2 py-2">Good</th>
+                <th class="px-2 py-2">Average</th>
+                <th class="px-2 py-2">Poor</th>
+                <th class="px-2 py-2">Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100">
+                <td class="px-2 py-2">Cockpit — General Appearance</td>
+                <td class="px-2 py-2"><input type="radio" name="cockpit_general" /></td>
+                <td class="px-2 py-2"><input type="radio" name="cockpit_general" /></td>
+                <td class="px-2 py-2"><input type="radio" name="cockpit_general" /></td>
+                <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="px-2 py-2">Cabin — Seats – Condition and Operation</td>
+                <td class="px-2 py-2"><input type="radio" name="cabin_seats" /></td>
+                <td class="px-2 py-2"><input type="radio" name="cabin_seats" /></td>
+                <td class="px-2 py-2"><input type="radio" name="cabin_seats" /></td>
+                <td class="px-2 py-2"><input class="w-full rounded border border-slate-200 px-2 py-1 text-xs" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-6 rounded-lg bg-white p-6 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900">Section 5 – Inspection Photos</h3>
+      <p class="mt-2 text-sm text-slate-600">Provide inspection photos per required areas. Uploads should align with the physical inspection checklist sequence.</p>
+      <input type="file" multiple class="mt-3 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" />
+    </section>
+  </main>
+
+  <div class="fixed bottom-0 left-0 right-0 border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-4">
+      <p class="text-xs text-slate-500">All changes are saved in real time. Complete each section in order to match the Word report structure.</p>
+      <button class="rounded-lg bg-slate-900 px-4 py-2 text-xs font-semibold text-white" type="button">Submit Report</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,369 @@
+{
+  "ATR": {
+    "name": "ATR Aircraft Inspection Report",
+    "components": {
+      "engines": 2,
+      "propellers": 2,
+      "landingGears": 3,
+      "landingGearTypes": ["RH", "LH", "NLG"]
+    },
+    "sections": {
+      "header": {
+        "title": "Aircraft Information",
+        "fields": [
+          {"id": "mission_type", "type": "radio", "label": "Mission Type", "options": ["Audit", "Return", "Delivery"], "required": true},
+          {"id": "aircraft_type", "type": "text", "label": "Aircraft Type", "placeholder": "ATR-72-600", "required": true},
+          {"id": "msn", "type": "text", "label": "MSN", "required": true},
+          {"id": "registration", "type": "text", "label": "Current Registration", "required": true},
+          {"id": "operator", "type": "text", "label": "Current Operator", "required": true},
+          {"id": "inspector_name", "type": "text", "label": "Report Prepared by", "required": true},
+          {"id": "report_date", "type": "date", "label": "Inspection Report Date", "required": true},
+          {"id": "physical_date", "type": "date", "label": "Physical Inspection Date", "required": true}
+        ]
+      },
+      "section1": {
+        "title": "Section 1 – Executive Summary",
+        "subsections": {
+          "general": {
+            "title": "1. General - Summary of Visit",
+            "fields": [
+              {"id": "visit_purpose", "type": "textarea", "label": "a) Brief purpose of the visit, location(s) and date(s) of the visit", "rows": 4},
+              {"id": "operator_cooperation", "type": "textarea", "label": "b) Operator cooperation and general responsiveness", "rows": 4},
+              {"id": "maintenance_facilities", "type": "textarea", "label": "c) Description of Operator's maintenance facilities at inspection locations", "rows": 4},
+              {"id": "issues_concerns", "type": "textarea", "label": "d) Issues/Concerns/Recommendations/Feedback on the Inspection", "rows": 4}
+            ]
+          },
+          "contacts": {
+            "title": "2. Operator Key Contact Personnel",
+            "type": "table",
+            "columns": ["Contact", "Title", "Phone Number", "Email"],
+            "rows": 2
+          },
+          "findings": {
+            "title": "3. Inspection Findings",
+            "fields": [
+              {"id": "records", "type": "textarea", "label": "a) RECORDS", "rows": 6},
+              {"id": "airframe", "type": "textarea", "label": "b) AIRFRAME", "rows": 6},
+              {"id": "engines", "type": "component_group", "component": "engines", "label": "c) ENGINES", "template": "Assigned Engine Serial Number – {serial} (Issues/Concerns/Recommendations)"},
+              {"id": "propellers", "type": "component_group", "component": "propellers", "label": "d) PROPELLERS", "template": "Assigned Propeller Serial Number – {serial} (Issues/Concerns/Recommendations)"},
+              {"id": "landing_gears", "type": "component_group", "component": "landingGears", "label": "e) LANDING GEARS AND WHEEL WELLS", "template": "{type} Landing Gear (Issues/Concerns/Recommendations)"},
+              {"id": "incidents", "type": "textarea", "label": "f) INCIDENTS/ACCIDENTS", "rows": 4},
+              {"id": "mods_stcs", "type": "table", "label": "g) Incorporated Mods & STCs at Current Operator", "columns": ["ATA", "Title"], "rows": 5},
+              {"id": "differences", "type": "textarea", "label": "h) DIFFERENCES", "rows": 3},
+              {"id": "follow_up", "type": "textarea", "label": "i) FOLLOW UP ITEMS", "rows": 3}
+            ]
+          }
+        }
+      },
+      "section2": {
+        "title": "Section 2 - Technical Specification",
+        "subsections": {
+          "general": {
+            "title": "1. General",
+            "fields": [
+              {"id": "msn_model", "type": "text", "label": "MSN Aircraft Model"},
+              {"id": "manufacture_date", "type": "text", "label": "Date of Manufacture (DD MMM YY)"},
+              {"id": "operator_tech", "type": "text", "label": "Operator"},
+              {"id": "total_hours", "type": "text", "label": "Total Airframe Hrs/Cycs Since New"},
+              {"id": "as_of_date", "type": "text", "label": "As of Date (DD MMM YY)"},
+              {"id": "cor_expiry", "type": "text", "label": "C of R / Expiry date (DD MMM YY)"},
+              {"id": "coa_expiry", "type": "text", "label": "C of A / ARC Expiry Date (DD MMM YY)"},
+              {"id": "noise_rating", "type": "text", "label": "Noise Rating"},
+              {"id": "etops", "type": "text", "label": "ETOPS Capable"}
+            ]
+          },
+          "maintenance": {
+            "title": "2. Current Maintenance Program & Maintenance Status",
+            "fields": [
+              {"id": "airworthiness_authority", "type": "text", "label": "Airworthiness Authority Approval"},
+              {"id": "amp_rev_date", "type": "text", "label": "Current AMP-Rev & Date"}
+            ],
+            "table": {
+              "columns": ["Check Type (C & greater)", "Interval", "Date of last Check", "TSN at Last Check", "CSN at Last Check", "Next Due FH/FC/Date"],
+              "rows": 5
+            }
+          },
+          "weights": {
+            "title": "3. Operating Weights",
+            "type": "table",
+            "columns": ["Type", "Metric", "Imperial"],
+            "rows": [
+              {"type": "Maximum Taxi Weight (MTW)", "metric": "79,607 KGS", "imperial": "175,500 LBS", "editable": false},
+              {"type": "Maximum Take Off Weight (MTOW)", "metric": "79,380 KGS", "imperial": "175,000 LBS", "editable": false},
+              {"type": "Maximum Landing Weight (MLW)", "metric": "68,176 KGS", "imperial": "150,300 LBS", "editable": false},
+              {"type": "Maximum Zero Fuel Weight (MZFW)", "metric": "64,819 KGS", "imperial": "142,900 LBS", "editable": false},
+              {"type": "Empty Weight (EW)", "metric": "", "imperial": "", "editable": true},
+              {"type": "Last Weighed Date", "metric": "", "imperial": "", "editable": true}
+            ]
+          }
+        }
+      },
+      "section3": {
+        "title": "Section 3 – Supporting Documentation",
+        "type": "table",
+        "columns": ["ATS", "Supporting Documentation", "✓ Yes", "✕ No", "NA", "Already on ATS / Comments"],
+        "rows": [
+          {"ats": "A001", "doc": "Airworthiness Review Certificate"},
+          {"ats": "A002", "doc": "Current Certificate of Airworthiness"}
+        ]
+      },
+      "section4": {
+        "title": "Section 4 – Physical Inspection Checklist",
+        "locations": {
+          "cockpit": {
+            "title": "Cockpit",
+            "description": "Cockpit configuration and equipment checks",
+            "fields": [
+              {"id": "hud", "type": "checkbox", "label": "HUD (Head-Up Display)", "options": ["Present", "Not Present", "N/A"]},
+              {"id": "flightbag", "type": "checkbox", "label": "Flightbag", "options": ["Present", "Not Present", "N/A"]},
+              {"id": "cdss", "type": "checkbox", "label": "CDSS (Cockpit Display System)", "options": ["Present", "Not Present", "N/A"]},
+              {"id": "general_appearance", "type": "radio", "label": "General Appearance", "options": ["Good", "Average", "Poor"], "remarks": true}
+            ],
+            "photos": {
+              "required": true,
+              "count": 3,
+              "description": "Cockpit overview, instrument panel, seats"
+            }
+          },
+          "galley": {
+            "title": "Galley",
+            "description": "Galley equipment and configuration",
+            "fields": [
+              {"id": "water_boilers", "type": "number", "label": "Number of Water Boilers", "min": 0},
+              {"id": "coffee_makers", "type": "number", "label": "Number of Coffee Makers", "min": 0},
+              {"id": "ovens", "type": "number", "label": "Number of Ovens", "min": 0},
+              {"id": "condition", "type": "radio", "label": "Overall Condition", "options": ["Good", "Average", "Poor"], "remarks": true}
+            ],
+            "photos": {
+              "required": true,
+              "count": 2,
+              "description": "Galley overview, equipment detail"
+            }
+          },
+          "cabin": {
+            "title": "Cabin",
+            "description": "Cabin interior inspection",
+            "fields": [
+              {"id": "seats_condition", "type": "radio", "label": "Seats – Condition and Operation", "options": ["Good", "Average", "Poor"], "remarks": true},
+              {"id": "overhead_bins", "type": "radio", "label": "Overhead Bins", "options": ["Good", "Average", "Poor"], "remarks": true},
+              {"id": "lavatories", "type": "number", "label": "Number of Lavatories", "min": 0},
+              {"id": "lavatories_condition", "type": "radio", "label": "Lavatories Condition", "options": ["Good", "Average", "Poor"], "remarks": true}
+            ],
+            "photos": {
+              "required": true,
+              "count": 2,
+              "description": "Cabin overview, seat detail"
+            }
+          },
+          "engines": {
+            "title": "Engines",
+            "description": "Engine inspection",
+            "component": "engines",
+            "componentCount": 2,
+            "fields": [
+              {"id": "serial", "type": "text", "label": "Engine Serial Number", "required": true},
+              {"id": "condition", "type": "radio", "label": "Condition", "options": ["Good", "Average", "Poor"], "required": true},
+              {"id": "leaks", "type": "checkbox", "label": "Evidence of Leaks", "options": ["Yes", "No"]},
+              {"id": "remarks", "type": "textarea", "label": "Issues/Concerns/Recommendations", "rows": 3}
+            ],
+            "photos": {
+              "required": true,
+              "count": 2,
+              "description": "Engine overview, detail shots per engine"
+            }
+          },
+          "propellers": {
+            "title": "Propellers",
+            "description": "Propeller inspection",
+            "component": "propellers",
+            "componentCount": 2,
+            "fields": [
+              {"id": "serial", "type": "text", "label": "Propeller Serial Number", "required": true},
+              {"id": "condition", "type": "radio", "label": "Condition", "options": ["Good", "Average", "Poor"], "required": true},
+              {"id": "blade_condition", "type": "radio", "label": "Blade Condition", "options": ["Good", "Average", "Poor"]},
+              {"id": "remarks", "type": "textarea", "label": "Issues/Concerns/Recommendations", "rows": 3}
+            ],
+            "photos": {
+              "required": true,
+              "count": 2,
+              "description": "Propeller overview, blade detail per propeller"
+            }
+          },
+          "landing_gears": {
+            "title": "Landing Gears",
+            "description": "Landing gear and wheel well inspection",
+            "component": "landingGears",
+            "componentTypes": ["RH", "LH", "NLG"],
+            "fields": [
+              {"id": "condition", "type": "radio", "label": "Condition", "options": ["Good", "Average", "Poor"], "required": true},
+              {"id": "leaks", "type": "checkbox", "label": "Evidence of Leaks", "options": ["Yes", "No"]},
+              {"id": "tire_condition", "type": "radio", "label": "Tire Condition", "options": ["Good", "Average", "Poor"]},
+              {"id": "wheel_well", "type": "radio", "label": "Wheel Well Condition", "options": ["Good", "Average", "Poor"]},
+              {"id": "remarks", "type": "textarea", "label": "Issues/Concerns/Recommendations", "rows": 3}
+            ],
+            "photos": {
+              "required": true,
+              "count": 3,
+              "description": "One photo per landing gear (RH, LH, NLG)"
+            }
+          },
+          "exterior": {
+            "title": "Aircraft Exterior",
+            "description": "Exterior inspection - circle aircraft counterclockwise",
+            "fields": [
+              {"id": "fuselage_skin", "type": "radio", "label": "Fuselage Skin", "options": ["Good", "Average", "Poor"], "remarks": true},
+              {"id": "windows", "type": "radio", "label": "Windows", "options": ["Good", "Average", "Poor"], "remarks": true},
+              {"id": "paint_condition", "type": "radio", "label": "Paint Condition", "options": ["Good", "Average", "Poor"], "remarks": true},
+              {"id": "damage_evidence", "type": "checkbox", "label": "Evidence of Damage", "options": ["Yes", "No"]},
+              {"id": "damage_details", "type": "textarea", "label": "Damage Details (if any)", "rows": 3}
+            ],
+            "photos": {
+              "required": true,
+              "count": 5,
+              "description": "Left side, right side, nose, tail, overall"
+            }
+          }
+        },
+        "metadata": {
+          "fields": [
+            {"id": "airport", "type": "text", "label": "Airport"},
+            {"id": "inspection_date", "type": "date", "label": "Date of Inspection"},
+            {"id": "facilities", "type": "text", "label": "Facilities"},
+            {"id": "conditions", "type": "text", "label": "Conditions"}
+          ]
+        }
+      },
+      "section5": {
+        "title": "Section 5 – Inspection Photos",
+        "description": "Provide inspection photos per required areas. Uploads should align with the physical inspection checklist sequence.",
+        "photos": {
+          "multiple": true,
+          "required": true
+        }
+      },
+      "opr": {
+        "title": "OPR Report",
+        "sections": {
+          "header": {
+            "title": "OPR Report Information",
+            "fields": [
+              {"id": "opr_report_date", "type": "date", "label": "OPR Report Date", "required": true},
+              {"id": "opr_inspector", "type": "text", "label": "OPR Inspector Name", "required": true},
+              {"id": "opr_report_number", "type": "text", "label": "OPR Report Number", "required": true}
+            ]
+          },
+          "summary": {
+            "title": "OPR Summary",
+            "fields": [
+              {"id": "opr_findings", "type": "textarea", "label": "OPR Findings Summary", "rows": 6},
+              {"id": "opr_recommendations", "type": "textarea", "label": "Recommendations", "rows": 4},
+              {"id": "opr_compliance", "type": "radio", "label": "Compliance Status", "options": ["Compliant", "Non-Compliant", "Conditional"], "required": true}
+            ]
+          },
+          "details": {
+            "title": "OPR Details",
+            "type": "table",
+            "columns": ["Item", "Requirement", "Finding", "Status", "Remarks"],
+            "rows": 10
+          }
+        }
+      }
+    }
+  },
+  "A320": {
+    "name": "Airbus A320 Inspection Report",
+    "components": {
+      "engines": 2,
+      "landingGears": 3,
+      "landingGearTypes": ["RH", "LH", "NLG"]
+    },
+    "sections": {
+      "header": {
+        "title": "Aircraft Information",
+        "fields": [
+          {"id": "mission_type", "type": "radio", "label": "Mission Type", "options": ["Audit", "Return", "Delivery"], "required": true},
+          {"id": "aircraft_type", "type": "text", "label": "Aircraft Type", "placeholder": "A320", "required": true},
+          {"id": "msn", "type": "text", "label": "MSN", "required": true},
+          {"id": "registration", "type": "text", "label": "Current Registration", "required": true},
+          {"id": "operator", "type": "text", "label": "Current Operator", "required": true},
+          {"id": "inspector_name", "type": "text", "label": "Report Prepared by", "required": true},
+          {"id": "report_date", "type": "date", "label": "Inspection Report Date", "required": true},
+          {"id": "physical_date", "type": "date", "label": "Physical Inspection Date", "required": true}
+        ]
+      },
+      "section4": {
+        "title": "Section 4 – Physical Inspection Checklist",
+        "locations": {
+          "cockpit": {
+            "title": "Cockpit",
+            "fields": [
+              {"id": "hud", "type": "checkbox", "label": "HUD", "options": ["Present", "Not Present", "N/A"]},
+              {"id": "flightbag", "type": "checkbox", "label": "Flightbag", "options": ["Present", "Not Present", "N/A"]},
+              {"id": "general_appearance", "type": "radio", "label": "General Appearance", "options": ["Good", "Average", "Poor"], "remarks": true}
+            ],
+            "photos": {"required": true, "count": 3}
+          },
+          "engines": {
+            "title": "Engines",
+            "component": "engines",
+            "componentCount": 2,
+            "fields": [
+              {"id": "serial", "type": "text", "label": "Engine Serial Number", "required": true},
+              {"id": "condition", "type": "radio", "label": "Condition", "options": ["Good", "Average", "Poor"], "required": true},
+              {"id": "remarks", "type": "textarea", "label": "Issues/Concerns/Recommendations", "rows": 3}
+            ],
+            "photos": {"required": true, "count": 2}
+          }
+        }
+      }
+    }
+  },
+  "A330": {
+    "name": "Airbus A330 Inspection Report",
+    "components": {
+      "engines": 2,
+      "landingGears": 3,
+      "landingGearTypes": ["RH", "LH", "NLG"]
+    },
+    "sections": {
+      "header": {
+        "title": "Aircraft Information",
+        "fields": [
+          {"id": "mission_type", "type": "radio", "label": "Mission Type", "options": ["Audit", "Return", "Delivery"], "required": true},
+          {"id": "aircraft_type", "type": "text", "label": "Aircraft Type", "placeholder": "A330", "required": true},
+          {"id": "msn", "type": "text", "label": "MSN", "required": true},
+          {"id": "registration", "type": "text", "label": "Current Registration", "required": true},
+          {"id": "operator", "type": "text", "label": "Current Operator", "required": true},
+          {"id": "inspector_name", "type": "text", "label": "Report Prepared by", "required": true},
+          {"id": "report_date", "type": "date", "label": "Inspection Report Date", "required": true},
+          {"id": "physical_date", "type": "date", "label": "Physical Inspection Date", "required": true}
+        ]
+      },
+      "section4": {
+        "title": "Section 4 – Physical Inspection Checklist",
+        "locations": {
+          "cockpit": {
+            "title": "Cockpit",
+            "fields": [
+              {"id": "hud", "type": "checkbox", "label": "HUD", "options": ["Present", "Not Present", "N/A"]},
+              {"id": "general_appearance", "type": "radio", "label": "General Appearance", "options": ["Good", "Average", "Poor"], "remarks": true}
+            ],
+            "photos": {"required": true, "count": 3}
+          },
+          "engines": {
+            "title": "Engines",
+            "component": "engines",
+            "componentCount": 2,
+            "fields": [
+              {"id": "serial", "type": "text", "label": "Engine Serial Number", "required": true},
+              {"id": "condition", "type": "radio", "label": "Condition", "options": ["Good", "Average", "Poor"], "required": true},
+              {"id": "remarks", "type": "textarea", "label": "Issues/Concerns/Recommendations", "rows": 3}
+            ],
+            "photos": {"required": true, "count": 2}
+          }
+        }
+      }
+    }
+  }
+}
+
