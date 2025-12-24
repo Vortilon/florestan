@@ -17,7 +17,7 @@
     dataPill: document.getElementById("dataPill"),
     clearFiltersBtn: document.getElementById("clearFiltersBtn"),
     roleSelector: document.getElementById("roleSelector"),
-    adminView: document.getElementById("adminView"),
+    adminView: document.getElementById("adminView") || null,
     sectionTitle: document.getElementById("sectionTitle"),
     sectionSubtitle: document.getElementById("sectionSubtitle"),
     modalBackdrop: document.getElementById("modalBackdrop"),
@@ -113,7 +113,7 @@
     const d = new Date(iso + "T00:00:00");
     if (isNaN(d.getTime())) return iso;
     const m = d.toLocaleString(undefined, { month: "short" });
-    return `${d.getDate().toString().padStart(2,"0")}-${m}-${d.getFullYear()}`;
+    return `${d.getDate().toString().padStart(2,"0")} ${m} ${d.getFullYear()}`;
   }
 
   function statusBadge(status) {
@@ -395,11 +395,12 @@
       tr.className = "hover:bg-slate-50 cursor-pointer";
       tr.addEventListener("click", () => viewProject(p));
       tr.innerHTML = `
-        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.operator)}</td>
-        <td class="px-3 py-3 whitespace-nowrap font-semibold text-slate-900">${escapeHtml(p.msn)}</td>
-        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.model)}</td>
+        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.msn || "")}</td>
+        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.operator || "")}</td>
+        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.model || "")}</td>
         <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(fmtDate(p.deadline))}</td>
-        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.fm)}</td>
+        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.fm || "")}</td>
+        <td class="px-3 py-3 whitespace-nowrap">${escapeHtml(p.assignedTo || "—")}</td>
         <td class="px-3 py-3 whitespace-nowrap">${statusBadge(p.status)}</td>
         <td class="px-3 py-3 whitespace-nowrap">${progressBar(p.progress ?? STATUS_PROGRESS[p.status] ?? 0)}</td>
         <td class="px-3 py-2 whitespace-nowrap" onclick="event.stopPropagation()">
@@ -420,13 +421,14 @@
       card.innerHTML = `
         <div class="flex items-start justify-between mb-2">
           <div>
-            <div class="font-semibold text-sm text-slate-900">${escapeHtml(p.operator)}</div>
-            <div class="text-xs text-slate-600">MSN ${escapeHtml(p.msn)} · ${escapeHtml(p.model)}</div>
+            <div class="font-semibold text-sm text-slate-900">MSN ${escapeHtml(p.msn || "")}</div>
+            <div class="text-xs text-slate-600">${escapeHtml(p.operator || "")} · ${escapeHtml(p.model || "")}</div>
           </div>
           ${statusBadge(p.status)}
         </div>
         <div class="text-xs text-slate-600 mb-2">
-          <div>FM: ${escapeHtml(p.fm)}</div>
+          <div>FM: ${escapeHtml(p.fm || "")}</div>
+          <div>Contractor: ${escapeHtml(p.assignedTo || "—")}</div>
           <div>Deadline: ${escapeHtml(fmtDate(p.deadline))}</div>
         </div>
         <div class="mb-2">${progressBar(p.progress ?? STATUS_PROGRESS[p.status] ?? 0)}</div>
@@ -465,16 +467,21 @@
     currentRole = els.roleSelector.value;
     localStorage.setItem(ROLE_KEY, currentRole);
 
+    if (els.adminView) {
+      if (currentRole === "admin") {
+        els.adminView.classList.remove("hidden");
+      } else {
+        els.adminView.classList.add("hidden");
+      }
+    }
+
     if (currentRole === "admin") {
-      els.adminView.classList.remove("hidden");
       els.sectionTitle.textContent = "All Projects";
       els.sectionSubtitle.textContent = "Manage and assign surveillance projects";
     } else if (currentRole === "fm") {
-      els.adminView.classList.add("hidden");
       els.sectionTitle.textContent = "My Projects";
       els.sectionSubtitle.textContent = "Projects assigned to you";
     } else {
-      els.adminView.classList.add("hidden");
       els.sectionTitle.textContent = "My Assignments";
       els.sectionSubtitle.textContent = "Active inspection reports";
     }

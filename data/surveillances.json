@@ -2408,6 +2408,19 @@
       "assignedTo": ""
     },
     {
+      "id": "P42825",
+      "operator": "SunExpress Airlines",
+      "msn": "42825",
+      "model": "737",
+      "deadline": "2026-12-31",
+      "fm": "Qurat ul ain Aslam",
+      "country": "SunExpress Airlines",
+      "region": "Europe",
+      "status": "ASSIGNED",
+      "progress": "30",
+      "assignedTo": "Qurat ul ain Aslam"
+    },
+    {
       "id": "P42826",
       "operator": "SunExpress Airlines",
       "msn": "42826",

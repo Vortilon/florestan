@@ -34,8 +34,8 @@
       <div class="flex items-center gap-3">
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/DAE_Logo.jpg" alt="DAE Logo" class="h-6 md:h-7 w-auto max-w-[90px] rounded-sm object-contain" />
         <div>
-          <h1 class="text-sm md:text-base font-semibold text-slate-900">Inspection Report</h1>
-          <p class="text-[10px] md:text-xs text-slate-500" id="projectInfo">Loading...</p>
+          <h1 class="text-sm font-semibold text-slate-900">Inspection Report</h1>
+          <p class="text-xs text-slate-500" id="projectInfo">Loading...</p>
         </div>
       </div>
       <div class="flex items-center gap-2">
@@ -44,8 +44,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-        <button id="saveStatusBtn" class="hidden md:flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700">
-          <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+        <button id="saveStatusBtn" class="hidden md:flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-600">
+          <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
           <span>Saved</span>
         </button>
       </div>
@@ -68,14 +68,14 @@
   </div>
   <div id="sectionMenuOverlay" class="md:hidden fixed inset-0 z-20 bg-black/30 hidden"></div>
 
-  <main class="mx-auto max-w-6xl px-4 md:px-6 pb-24 md:pb-32 pt-4 md:pt-8">
+  <main class="mx-auto max-w-6xl px-3 md:px-4 pb-20 md:pb-24 pt-3 md:pt-4">
     <!-- Tabs -->
-    <div class="mb-6 border-b border-slate-200">
-      <div class="flex gap-2 overflow-x-auto">
-        <button class="tab-btn active px-4 py-2 text-sm font-semibold text-slate-900 border-b-2 border-slate-900 whitespace-nowrap" data-tab="air">
+    <div class="mb-4 border-b border-slate-200">
+      <div class="flex gap-1 overflow-x-auto">
+        <button class="tab-btn active px-3 py-2 text-xs font-semibold text-slate-900 border-b-2 border-slate-900 whitespace-nowrap" data-tab="air">
           AIR Report
         </button>
-        <button class="tab-btn px-4 py-2 text-sm font-semibold text-slate-600 border-b-2 border-transparent hover:text-slate-900 whitespace-nowrap" data-tab="opr">
+        <button class="tab-btn px-3 py-2 text-xs font-semibold text-slate-600 border-b-2 border-transparent hover:text-slate-900 whitespace-nowrap" data-tab="opr">
           OPR Report
         </button>
       </div>
@@ -84,48 +84,48 @@
     <!-- AIR Report Tab Content -->
     <div id="airTab" class="tab-content">
       <!-- Header Section -->
-      <section id="section-header" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
-        <h2 class="text-xl md:text-2xl font-semibold text-slate-900 mb-4 md:mb-6">AIRCRAFT INSPECTION REPORT</h2>
-        <div id="headerFields" class="grid gap-4 md:grid-cols-3">
+      <section id="section-header" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
+        <h2 class="text-base md:text-lg font-semibold text-slate-900 mb-3">AIRCRAFT INSPECTION REPORT</h2>
+        <div id="headerFields" class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <!-- Populated by form-loader -->
         </div>
       </section>
 
       <!-- Section 1: Executive Summary -->
-      <section id="section-1" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
-        <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4 md:mb-6">Section 1 – Executive Summary</h3>
+      <section id="section-1" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
+        <h3 class="text-sm md:text-base font-semibold text-slate-900 mb-3">Section 1 – Executive Summary</h3>
         <div id="section1Content">
           <!-- Populated by form-loader -->
         </div>
       </section>
 
       <!-- Section 2: Technical Specification -->
-      <section id="section-2" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
-        <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4 md:mb-6">Section 2 - Technical Specification</h3>
+      <section id="section-2" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
+        <h3 class="text-sm md:text-base font-semibold text-slate-900 mb-3">Section 2 - Technical Specification</h3>
         <div id="section2Content">
           <!-- Populated by form-loader -->
         </div>
       </section>
 
       <!-- Section 3: Supporting Documentation -->
-      <section id="section-3" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
-        <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4 md:mb-6">Section 3 – Supporting Documentation</h3>
+      <section id="section-3" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
+        <h3 class="text-sm md:text-base font-semibold text-slate-900 mb-3">Section 3 – Supporting Documentation</h3>
         <div id="section3Content">
           <!-- Populated by form-loader -->
         </div>
       </section>
 
       <!-- Section 4: Physical Inspection Checklist -->
-      <section id="section-4" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
-        <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4 md:mb-6">Section 4 – Physical Inspection Checklist</h3>
+      <section id="section-4" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
+        <h3 class="text-sm md:text-base font-semibold text-slate-900 mb-3">Section 4 – Physical Inspection Checklist</h3>
         <div id="section4Content">
           <!-- Populated by form-loader with locations -->
         </div>
       </section>
 
       <!-- Section 5: Photos -->
-      <section id="section-5" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
-        <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4 md:mb-6">Section 5 – Inspection Photos</h3>
+      <section id="section-5" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
+        <h3 class="text-sm md:text-base font-semibold text-slate-900 mb-3">Section 5 – Inspection Photos</h3>
         <div id="section5Content">
           <!-- Populated by form-loader -->
         </div>
@@ -134,7 +134,7 @@
 
     <!-- OPR Report Tab Content -->
     <div id="oprTab" class="tab-content hidden">
-      <section id="opr-section" class="rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6">
+      <section id="opr-section" class="rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200">
         <div id="oprContent">
           <!-- Populated by form-loader -->
         </div>
@@ -150,7 +150,7 @@
         <span class="md:hidden">Auto-saving...</span>
       </p>
       <div class="flex items-center gap-2">
-        <button id="submitBtn" class="rounded-lg bg-slate-900 px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-sm font-semibold text-white hover:bg-slate-800 active:bg-slate-700 min-h-[44px]">
+        <button id="submitBtn" class="rounded-md bg-slate-900 px-4 py-2 text-xs font-semibold text-white hover:bg-slate-800 active:bg-slate-700 min-h-[36px]">
           Submit Report
         </button>
       </div>

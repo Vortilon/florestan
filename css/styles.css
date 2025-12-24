@@ -9,15 +9,16 @@ button, input, select, textarea {
   transition: all 0.15s ease;
 }
 
-/* Touch-friendly minimum sizes */
-button, a {
-  min-height: 44px;
-  min-width: 44px;
+/* Touch-friendly minimum sizes - but not excessive */
+button:not([class*="h-"]):not([class*="min-h"]), 
+a:not([class*="h-"]):not([class*="min-h"]) {
+  min-height: 32px;
 }
 
 @media (max-width: 768px) {
-  button, a {
-    min-height: 48px;
+  button:not([class*="h-"]):not([class*="min-h"]), 
+  a:not([class*="h-"]):not([class*="min-h"]) {
+    min-height: 36px;
   }
 }
 

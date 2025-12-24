@@ -60,7 +60,7 @@ class FormLoader {
     // Label
     if (fieldDef.label) {
       const label = document.createElement("label");
-      label.className = "text-[10px] md:text-xs font-semibold uppercase tracking-wide text-slate-400";
+      label.className = "text-[11px] font-medium text-slate-600";
       label.textContent = fieldDef.label;
       if (fieldDef.required) {
         label.innerHTML += ' <span class="text-red-500">*</span>';
@@ -75,13 +75,13 @@ class FormLoader {
       case "date":
         input = document.createElement("input");
         input.type = fieldDef.type;
-        input.className = "w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm focus:border-slate-400 focus:outline-none";
+        input.className = "w-full rounded-md border border-slate-300 px-2.5 py-1.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400";
         if (fieldDef.placeholder) input.placeholder = fieldDef.placeholder;
         break;
 
       case "textarea":
         input = document.createElement("textarea");
-        input.className = "w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm focus:border-slate-400 focus:outline-none resize-y";
+        input.className = "w-full rounded-md border border-slate-300 px-2.5 py-1.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400 resize-y";
         input.rows = fieldDef.rows || 3;
         if (fieldDef.placeholder) input.placeholder = fieldDef.placeholder;
         break;
@@ -89,14 +89,14 @@ class FormLoader {
       case "number":
         input = document.createElement("input");
         input.type = "number";
-        input.className = "w-full rounded-lg border border-slate-200 px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm focus:border-slate-400 focus:outline-none";
+        input.className = "w-full rounded-md border border-slate-300 px-2.5 py-1.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400";
         if (fieldDef.min !== undefined) input.min = fieldDef.min;
         if (fieldDef.max !== undefined) input.max = fieldDef.max;
         break;
 
       case "radio":
         const radioGroup = document.createElement("div");
-        radioGroup.className = "flex flex-wrap gap-3 md:gap-4";
+        radioGroup.className = "flex flex-wrap gap-2.5";
         fieldDef.options.forEach((option, idx) => {
           const radioWrapper = document.createElement("label");
           radioWrapper.className = "flex items-center gap-2 cursor-pointer";
@@ -104,9 +104,9 @@ class FormLoader {
           radio.type = "radio";
           radio.name = fieldId;
           radio.value = option;
-          radio.className = "h-4 w-4 text-slate-900";
+          radio.className = "h-3.5 w-3.5 text-slate-900 focus:ring-1 focus:ring-slate-400";
           const span = document.createElement("span");
-          span.className = "text-xs md:text-sm text-slate-700";
+          span.className = "text-xs text-slate-700";
           span.textContent = option;
           radioWrapper.appendChild(radio);
           radioWrapper.appendChild(span);
@@ -122,16 +122,16 @@ class FormLoader {
 
       case "checkbox":
         const checkboxGroup = document.createElement("div");
-        checkboxGroup.className = "flex flex-wrap gap-3 md:gap-4";
+        checkboxGroup.className = "flex flex-wrap gap-2.5";
         fieldDef.options.forEach((option) => {
           const checkboxWrapper = document.createElement("label");
           checkboxWrapper.className = "flex items-center gap-2 cursor-pointer";
           const checkbox = document.createElement("input");
           checkbox.type = "checkbox";
           checkbox.value = option;
-          checkbox.className = "h-4 w-4 rounded border-slate-300 text-slate-900";
+          checkbox.className = "h-3.5 w-3.5 rounded border-slate-300 text-slate-900 focus:ring-1 focus:ring-slate-400";
           const span = document.createElement("span");
-          span.className = "text-xs md:text-sm text-slate-700";
+          span.className = "text-xs text-slate-700";
           span.textContent = option;
           checkboxWrapper.appendChild(checkbox);
           checkboxWrapper.appendChild(span);
@@ -180,10 +180,10 @@ class FormLoader {
     // Create lines for each component
     for (let i = 0; i < componentCount; i++) {
       const componentDiv = document.createElement("div");
-      componentDiv.className = "rounded-lg border border-slate-200 bg-slate-50 p-3 md:p-4";
+      componentDiv.className = "rounded-md border border-slate-200 bg-white p-3";
 
       const componentLabel = document.createElement("div");
-      componentLabel.className = "text-xs md:text-sm font-semibold text-slate-700 mb-3";
+      componentLabel.className = "text-xs font-semibold text-slate-700 mb-2";
       
       if (componentTypes.length > 0 && i < componentTypes.length) {
         componentLabel.textContent = `${componentTypes[i]} ${fieldDef.component.charAt(0).toUpperCase() + fieldDef.component.slice(1)}`;
@@ -212,18 +212,18 @@ class FormLoader {
    */
   renderTable(tableDef, container, dataManager, tableId) {
     const tableDiv = document.createElement("div");
-    tableDiv.className = "overflow-x-auto rounded-lg border border-slate-200";
+    tableDiv.className = "overflow-x-auto rounded-md border border-slate-200 -mx-1";
 
     const table = document.createElement("table");
-    table.className = "min-w-full text-left text-xs text-slate-600";
+    table.className = "min-w-full text-left text-xs text-slate-700 divide-y divide-slate-200";
 
     // Header
     const thead = document.createElement("thead");
-    thead.className = "border-b border-slate-200 bg-slate-50 text-[10px] md:text-[11px] font-semibold uppercase tracking-wide text-slate-400";
+    thead.className = "bg-slate-50";
     const headerRow = document.createElement("tr");
     tableDef.columns.forEach(col => {
       const th = document.createElement("th");
-      th.className = "px-2 md:px-3 py-2";
+      th.className = "px-3 py-2 text-left text-xs font-semibold text-slate-700 whitespace-nowrap";
       th.textContent = col;
       headerRow.appendChild(th);
     });
@@ -235,13 +235,13 @@ class FormLoader {
     const rowCount = tableDef.rows || 2;
     for (let i = 0; i < rowCount; i++) {
       const row = document.createElement("tr");
-      row.className = "border-b border-slate-100";
+      row.className = "bg-white hover:bg-slate-50";
       tableDef.columns.forEach((col, colIdx) => {
         const td = document.createElement("td");
-        td.className = "px-2 md:px-3 py-2";
+        td.className = "px-3 py-2 whitespace-nowrap";
         const input = document.createElement("input");
         input.type = "text";
-        input.className = "w-full rounded border border-slate-200 px-2 py-1 text-xs";
+        input.className = "w-full min-w-[120px] rounded border border-slate-300 px-2 py-1 text-xs text-slate-900 focus:border-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400";
         input.id = `${tableId}_row${i}_col${colIdx}`;
         input.name = `${tableId}_row${i}_col${colIdx}`;
         td.appendChild(input);
@@ -262,19 +262,19 @@ class FormLoader {
    */
   renderLocation(locationDef, container, dataManager, photoManager) {
     const locationDiv = document.createElement("div");
-    locationDiv.className = "rounded-lg border border-slate-200 bg-white p-4 md:p-6 mb-6";
+    locationDiv.className = "rounded-lg border border-slate-200 bg-slate-50 p-3 md:p-4 mb-4";
     locationDiv.id = `location-${locationDef.title.toLowerCase().replace(/\s+/g, "-")}`;
 
     // Title
     const title = document.createElement("h4");
-    title.className = "text-base md:text-lg font-semibold text-slate-900 mb-2";
+    title.className = "text-sm md:text-base font-semibold text-slate-900 mb-2";
     title.textContent = locationDef.title;
     locationDiv.appendChild(title);
 
     // Description
     if (locationDef.description) {
       const desc = document.createElement("p");
-      desc.className = "text-xs md:text-sm text-slate-600 mb-4";
+      desc.className = "text-xs text-slate-600 mb-3";
       desc.textContent = locationDef.description;
       locationDiv.appendChild(desc);
     }
@@ -291,7 +291,7 @@ class FormLoader {
     // Fields
     if (locationDef.fields) {
       const fieldsContainer = document.createElement("div");
-      fieldsContainer.className = "space-y-4";
+      fieldsContainer.className = "grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3";
       locationDef.fields.forEach(fieldDef => {
         const fieldElement = this.renderField(fieldDef, fieldsContainer, dataManager);
         if (fieldElement) {
@@ -311,10 +311,10 @@ class FormLoader {
     // Photo section
     if (locationDef.photos && photoManager) {
       const photoSection = document.createElement("div");
-      photoSection.className = "mt-6 pt-6 border-t border-slate-200";
+      photoSection.className = "mt-4 pt-4 border-t border-slate-200";
       
       const photoTitle = document.createElement("h5");
-      photoTitle.className = "text-sm font-semibold text-slate-700 mb-3";
+      photoTitle.className = "text-xs font-semibold text-slate-700 mb-2";
       photoTitle.textContent = "Photos";
       photoSection.appendChild(photoTitle);
 
@@ -339,31 +339,34 @@ class FormLoader {
    */
   renderSection(sectionDef, container, dataManager, photoManagers = {}) {
     const sectionDiv = document.createElement("section");
-    sectionDiv.className = "rounded-lg bg-white p-4 md:p-6 shadow-sm mb-6";
+    sectionDiv.className = "rounded-lg bg-white p-3 md:p-4 shadow-sm mb-4 border border-slate-200";
 
     if (sectionDef.title) {
       const title = document.createElement("h3");
-      title.className = "text-lg md:text-xl font-semibold text-slate-900 mb-4";
+      title.className = "text-sm md:text-base font-semibold text-slate-900 mb-3";
       title.textContent = sectionDef.title;
       sectionDiv.appendChild(title);
     }
 
+    // Handle OPR-style sections (nested "sections" instead of "subsections")
+    const subsections = sectionDef.subsections || sectionDef.sections;
+
     // Subsections
-    if (sectionDef.subsections) {
-      Object.values(sectionDef.subsections).forEach(subsection => {
+    if (subsections) {
+      Object.values(subsections).forEach(subsection => {
         const subDiv = document.createElement("div");
-        subDiv.className = "mb-6";
+        subDiv.className = "mb-4";
         
         if (subsection.title) {
           const subTitle = document.createElement("h4");
-          subTitle.className = "text-base font-semibold text-slate-900 mb-3";
+          subTitle.className = "text-sm md:text-base font-semibold text-slate-900 mb-2";
           subTitle.textContent = subsection.title;
           subDiv.appendChild(subTitle);
         }
 
         if (subsection.fields) {
           const fieldsContainer = document.createElement("div");
-          fieldsContainer.className = "grid gap-4 md:grid-cols-2";
+          fieldsContainer.className = "grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3";
           subsection.fields.forEach(fieldDef => {
             if (fieldDef.type === "component_group") {
               const components = this.getComponents();

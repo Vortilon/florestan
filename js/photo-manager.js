@@ -162,7 +162,7 @@ class PhotoManager {
   createCaptureButton(container, input) {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = "flex items-center justify-center gap-2 rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-800 active:bg-slate-700 min-h-[48px]";
+    button.className = "flex items-center justify-center gap-2 rounded-md bg-slate-900 px-3 py-2 text-xs font-semibold text-white hover:bg-slate-800 active:bg-slate-700";
     button.innerHTML = `
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
@@ -204,7 +204,7 @@ class PhotoManager {
 
     this.photos.forEach((photo, index) => {
       const photoCard = document.createElement("div");
-      photoCard.className = "relative group rounded-lg border border-slate-200 bg-white overflow-hidden";
+      photoCard.className = "relative group rounded-md border border-slate-200 bg-white overflow-hidden";
       
       const img = document.createElement("img");
       img.src = photo.data;
@@ -217,7 +217,7 @@ class PhotoManager {
 
       const deleteBtn = document.createElement("button");
       deleteBtn.type = "button";
-      deleteBtn.className = "rounded-full bg-red-600 p-2 text-white hover:bg-red-700 active:bg-red-800";
+      deleteBtn.className = "rounded-full bg-red-600 p-1.5 text-white hover:bg-red-700 active:bg-red-800";
       deleteBtn.innerHTML = `
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -290,7 +290,7 @@ class PhotoManager {
    */
   createPhotoReminder(requiredCount, description) {
     const reminder = document.createElement("div");
-    reminder.className = "rounded-lg border border-amber-200 bg-amber-50 p-3 mb-4";
+    reminder.className = "rounded-md border border-amber-200 bg-amber-50 p-2.5 mb-3";
     reminder.innerHTML = `
       <div class="flex items-start gap-2">
         <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,10 +298,10 @@ class PhotoManager {
         </svg>
         <div class="flex-1">
           <div class="text-xs font-semibold text-amber-900">Photo Required</div>
-          <div class="text-xs text-amber-700 mt-1">
+          <div class="text-xs text-amber-700 mt-0.5">
             ${description || `Please take ${requiredCount} photo(s) for this location`}
           </div>
-          <div class="text-xs text-amber-600 mt-1">
+          <div class="text-xs text-amber-600 mt-0.5">
             Current: ${this.getCount()} / ${requiredCount} required
           </div>
         </div>
